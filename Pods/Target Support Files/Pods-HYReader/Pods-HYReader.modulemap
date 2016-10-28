@@ -1,0 +1,6 @@
+framework module Pods_HYReader {
+  umbrella header "Pods-HYReader-umbrella.h"
+
+  export *
+  module * { export * }
+}

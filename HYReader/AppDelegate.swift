@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import MMDrawerController
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,8 +16,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        configureRootVC()
         return true
     }
+    //封装一个window跟控制器
+    func configureRootVC(){
+        
+        //设置侧滑视图
+        let leftVC = MenuViewController()
+        let centerVC = BookrackViewController()
+        let rightVC = MainTabBarController()
+        let centerNav = UINavigationController(rootViewController: centerVC)
+        let mmDrawerVC = MMDrawerController.init(centerViewController: centerNav, leftDrawerViewController: leftVC, rightDrawerViewController: rightVC)
+        
+        //打开关闭抽屉手势
+        
+        mmDrawerVC.openDrawerGestureModeMask = MMOpenDrawerGestureMode.All
+        mmDrawerVC.closeDrawerGestureModeMask = MMCloseDrawerGestureMode.All
+        //抽屉打开尺度
+        mmDrawerVC.maximumLeftDrawerWidth = UIScreen.mainScreen().bounds.width-80
+        mmDrawerVC.maximumRightDrawerWidth = UIScreen.mainScreen().bounds.width
+        
+        window = UIWindow.init(frame: UIScreen.mainScreen().bounds)
+        window?.rootViewController = mmDrawerVC
+        window?.makeKeyAndVisible() 
+    }
+   
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

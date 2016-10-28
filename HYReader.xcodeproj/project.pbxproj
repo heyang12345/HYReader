@@ -7,14 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC11B7771DC21B6D00790F85 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC11B7761DC21B6D00790F85 /* MenuViewController.swift */; };
+		BC2827791DC1F79E000EA2CD /* BookrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2827781DC1F79E000EA2CD /* BookrackViewController.swift */; };
+		BCA0172A1DC240EB0039FB75 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA017291DC240EB0039FB75 /* LoginViewController.swift */; };
 		BCA792A71DC0F27700B0AD28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA792A61DC0F27700B0AD28 /* AppDelegate.swift */; };
 		BCA792A91DC0F27700B0AD28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA792A81DC0F27700B0AD28 /* ViewController.swift */; };
 		BCA792AC1DC0F27800B0AD28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA792AA1DC0F27800B0AD28 /* Main.storyboard */; };
 		BCA792AE1DC0F27800B0AD28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCA792AD1DC0F27800B0AD28 /* Assets.xcassets */; };
 		BCA792B11DC0F27800B0AD28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA792AF1DC0F27800B0AD28 /* LaunchScreen.storyboard */; };
+		BCA792BC1DC0F32B00B0AD28 /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA792B91DC0F32B00B0AD28 /* StackViewController.swift */; };
+		BCA792BD1DC0F32B00B0AD28 /* ChoicenessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA792BB1DC0F32B00B0AD28 /* ChoicenessViewController.swift */; };
+		BCA792C71DC0F33400B0AD28 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA792BF1DC0F33400B0AD28 /* MainTabBarController.swift */; };
+		BCA792C81DC0F33400B0AD28 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA792C11DC0F33400B0AD28 /* MeViewController.swift */; };
+		BCA792C91DC0F33400B0AD28 /* CircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA792C31DC0F33400B0AD28 /* CircleViewController.swift */; };
+		BCA792CB1DC0F33400B0AD28 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA792C61DC0F33400B0AD28 /* SearchViewController.swift */; };
+		BCCB19A91DC1E99D00C336A9 /* GuidanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCB19A81DC1E99D00C336A9 /* GuidanceViewController.swift */; };
+		BCE9916B1DC31D9A0064F4CF /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE9916A1DC31D990064F4CF /* RegisterViewController.swift */; };
+		C1AD260A86DEDB1DA59F2D70 /* Pods_HYReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C8906628FCAF2ED483DAAC /* Pods_HYReader.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20AFB9AD78EA720D43641756 /* Pods-HYReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HYReader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HYReader/Pods-HYReader.debug.xcconfig"; sourceTree = "<group>"; };
+		8FC55B30F87C35C3985F031F /* Pods-HYReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HYReader.release.xcconfig"; path = "Pods/Target Support Files/Pods-HYReader/Pods-HYReader.release.xcconfig"; sourceTree = "<group>"; };
+		BC11B7761DC21B6D00790F85 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		BC2827781DC1F79E000EA2CD /* BookrackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookrackViewController.swift; sourceTree = "<group>"; };
+		BCA017291DC240EB0039FB75 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BCA792A31DC0F27600B0AD28 /* HYReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HYReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCA792A61DC0F27700B0AD28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCA792A81DC0F27700B0AD28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +39,15 @@
 		BCA792AD1DC0F27800B0AD28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCA792B01DC0F27800B0AD28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCA792B21DC0F27800B0AD28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCA792B91DC0F32B00B0AD28 /* StackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
+		BCA792BB1DC0F32B00B0AD28 /* ChoicenessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoicenessViewController.swift; sourceTree = "<group>"; };
+		BCA792BF1DC0F33400B0AD28 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		BCA792C11DC0F33400B0AD28 /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
+		BCA792C31DC0F33400B0AD28 /* CircleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleViewController.swift; sourceTree = "<group>"; };
+		BCA792C61DC0F33400B0AD28 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		BCCB19A81DC1E99D00C336A9 /* GuidanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuidanceViewController.swift; sourceTree = "<group>"; };
+		BCE9916A1DC31D990064F4CF /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		C9C8906628FCAF2ED483DAAC /* Pods_HYReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HYReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +55,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1AD260A86DEDB1DA59F2D70 /* Pods_HYReader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		367486176D5B0F9DF912A811 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9C8906628FCAF2ED483DAAC /* Pods_HYReader.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC2827771DC1F79E000EA2CD /* Bookrack(书架) */ = {
+			isa = PBXGroup;
+			children = (
+				BC11B7761DC21B6D00790F85 /* MenuViewController.swift */,
+				BC2827781DC1F79E000EA2CD /* BookrackViewController.swift */,
+			);
+			name = "Bookrack(书架)";
+			path = "Help(帮助)/Bookrack(书架)";
+			sourceTree = "<group>";
+		};
+		BCA017281DC240CB0039FB75 /* Login&register */ = {
+			isa = PBXGroup;
+			children = (
+				BCA017291DC240EB0039FB75 /* LoginViewController.swift */,
+				BCE9916A1DC31D990064F4CF /* RegisterViewController.swift */,
+			);
+			path = "Login&register";
+			sourceTree = "<group>";
+		};
 		BCA7929A1DC0F27500B0AD28 = {
 			isa = PBXGroup;
 			children = (
 				BCA792A51DC0F27700B0AD28 /* HYReader */,
 				BCA792A41DC0F27600B0AD28 /* Products */,
+				D0EE3DD5F1073EDDC98DECE9 /* Pods */,
+				367486176D5B0F9DF912A811 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +110,16 @@
 		BCA792A51DC0F27700B0AD28 /* HYReader */ = {
 			isa = PBXGroup;
 			children = (
+				BCA017281DC240CB0039FB75 /* Login&register */,
+				BCCB19A71DC1E99D00C336A9 /* Guidance(引导页) */,
+				BC2827771DC1F79E000EA2CD /* Bookrack(书架) */,
+				BCA792CC1DC0F75F00B0AD28 /* Help(帮助) */,
+				BCA792BE1DC0F33400B0AD28 /* Main */,
+				BCA792BA1DC0F32B00B0AD28 /* Choiceness(精选) */,
+				BCA792B81DC0F32B00B0AD28 /*  Stack(书库) */,
+				BCA792C21DC0F33400B0AD28 /* Circle(圈子) */,
+				BCA792C41DC0F33400B0AD28 /* Search(搜索) */,
+				BCA792C01DC0F33400B0AD28 /* Me(我的)) */,
 				BCA792A61DC0F27700B0AD28 /* AppDelegate.swift */,
 				BCA792A81DC0F27700B0AD28 /* ViewController.swift */,
 				BCA792AA1DC0F27800B0AD28 /* Main.storyboard */,
@@ -64,6 +130,81 @@
 			path = HYReader;
 			sourceTree = "<group>";
 		};
+		BCA792B81DC0F32B00B0AD28 /*  Stack(书库) */ = {
+			isa = PBXGroup;
+			children = (
+				BCA792B91DC0F32B00B0AD28 /* StackViewController.swift */,
+			);
+			name = " Stack(书库)";
+			path = "BookCity(书城)";
+			sourceTree = "<group>";
+		};
+		BCA792BA1DC0F32B00B0AD28 /* Choiceness(精选) */ = {
+			isa = PBXGroup;
+			children = (
+				BCA792BB1DC0F32B00B0AD28 /* ChoicenessViewController.swift */,
+			);
+			name = "Choiceness(精选)";
+			path = "Category(分类)";
+			sourceTree = "<group>";
+		};
+		BCA792BE1DC0F33400B0AD28 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BCA792BF1DC0F33400B0AD28 /* MainTabBarController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		BCA792C01DC0F33400B0AD28 /* Me(我的)) */ = {
+			isa = PBXGroup;
+			children = (
+				BCA792C11DC0F33400B0AD28 /* MeViewController.swift */,
+			);
+			path = "Me(我的))";
+			sourceTree = "<group>";
+		};
+		BCA792C21DC0F33400B0AD28 /* Circle(圈子) */ = {
+			isa = PBXGroup;
+			children = (
+				BCA792C31DC0F33400B0AD28 /* CircleViewController.swift */,
+			);
+			name = "Circle(圈子)";
+			path = "RankingList(排行榜)";
+			sourceTree = "<group>";
+		};
+		BCA792C41DC0F33400B0AD28 /* Search(搜索) */ = {
+			isa = PBXGroup;
+			children = (
+				BCA792C61DC0F33400B0AD28 /* SearchViewController.swift */,
+			);
+			path = "Search(搜索)";
+			sourceTree = "<group>";
+		};
+		BCA792CC1DC0F75F00B0AD28 /* Help(帮助) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Help(帮助)";
+			sourceTree = "<group>";
+		};
+		BCCB19A71DC1E99D00C336A9 /* Guidance(引导页) */ = {
+			isa = PBXGroup;
+			children = (
+				BCCB19A81DC1E99D00C336A9 /* GuidanceViewController.swift */,
+			);
+			path = "Guidance(引导页)";
+			sourceTree = "<group>";
+		};
+		D0EE3DD5F1073EDDC98DECE9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				20AFB9AD78EA720D43641756 /* Pods-HYReader.debug.xcconfig */,
+				8FC55B30F87C35C3985F031F /* Pods-HYReader.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +212,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BCA792B51DC0F27800B0AD28 /* Build configuration list for PBXNativeTarget "HYReader" */;
 			buildPhases = (
+				CA11F1D27C2DE08BA5D0B870 /* [CP] Check Pods Manifest.lock */,
 				BCA7929F1DC0F27500B0AD28 /* Sources */,
 				BCA792A01DC0F27500B0AD28 /* Frameworks */,
 				BCA792A11DC0F27500B0AD28 /* Resources */,
+				755208351021149F8218BC51 /* [CP] Embed Pods Frameworks */,
+				8AA6275024D63974F4C9B348 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,12 +274,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		755208351021149F8218BC51 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HYReader/Pods-HYReader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AA6275024D63974F4C9B348 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HYReader/Pods-HYReader-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA11F1D27C2DE08BA5D0B870 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BCA7929F1DC0F27500B0AD28 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCA0172A1DC240EB0039FB75 /* LoginViewController.swift in Sources */,
+				BCA792C81DC0F33400B0AD28 /* MeViewController.swift in Sources */,
+				BCA792BD1DC0F32B00B0AD28 /* ChoicenessViewController.swift in Sources */,
+				BCA792CB1DC0F33400B0AD28 /* SearchViewController.swift in Sources */,
+				BCCB19A91DC1E99D00C336A9 /* GuidanceViewController.swift in Sources */,
+				BC11B7771DC21B6D00790F85 /* MenuViewController.swift in Sources */,
 				BCA792A91DC0F27700B0AD28 /* ViewController.swift in Sources */,
+				BCA792C71DC0F33400B0AD28 /* MainTabBarController.swift in Sources */,
+				BCA792C91DC0F33400B0AD28 /* CircleViewController.swift in Sources */,
+				BCA792BC1DC0F32B00B0AD28 /* StackViewController.swift in Sources */,
+				BCE9916B1DC31D9A0064F4CF /* RegisterViewController.swift in Sources */,
+				BC2827791DC1F79E000EA2CD /* BookrackViewController.swift in Sources */,
 				BCA792A71DC0F27700B0AD28 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,6 +450,7 @@
 		};
 		BCA792B61DC0F27800B0AD28 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20AFB9AD78EA720D43641756 /* Pods-HYReader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HYReader/Info.plist;
@@ -258,6 +462,7 @@
 		};
 		BCA792B71DC0F27800B0AD28 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FC55B30F87C35C3985F031F /* Pods-HYReader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HYReader/Info.plist;
@@ -286,6 +491,7 @@
 				BCA792B71DC0F27800B0AD28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

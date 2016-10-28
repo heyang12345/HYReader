@@ -1,0 +1,32 @@
+PODS:
+  - JKCategories (1.4)
+  - MMDrawerController (0.5.7):
+    - MMDrawerController/Core (= 0.5.7)
+    - MMDrawerController/MMDrawerBarButtonItem (= 0.5.7)
+    - MMDrawerController/MMDrawerVisualStates (= 0.5.7)
+    - MMDrawerController/Subclass (= 0.5.7)
+  - MMDrawerController/Core (0.5.7)
+  - MMDrawerController/MMDrawerBarButtonItem (0.5.7):
+    - MMDrawerController/Core
+  - MMDrawerController/MMDrawerVisualStates (0.5.7):
+    - MMDrawerController/Core
+  - MMDrawerController/Subclass (0.5.7):
+    - MMDrawerController/Core
+  - SnapKit (0.22.0)
+  - WPAttributedMarkup (1.0.0)
+
+DEPENDENCIES:
+  - JKCategories
+  - MMDrawerController (~> 0.5.7)
+  - SnapKit (~> 0.0)
+  - WPAttributedMarkup
+
+SPEC CHECKSUMS:
+  JKCategories: 7575c5e39a54e664c44969ee2fab36d75a9c1d17
+  MMDrawerController: 7a4cf8e25596bf2434e03ce50d22a8608ddee6a1
+  SnapKit: 0dd2fd157330f1ea11fd84da13e6be8a7a22bae0
+  WPAttributedMarkup: eb50878af4ec647d8d2090f721a5cfe7d29c27fe
+
+PODFILE CHECKSUM: b9f6458c7024f938560817b1d1c86ee12a5172c3
+
+COCOAPODS: 1.1.1
