@@ -13,6 +13,8 @@ import JKCategories
 class GuidanceViewController: UIViewController {
     
     let ScrollView = UIScrollView()
+    //页码指示器
+    let pageCtl = UIPageControl()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +49,7 @@ class GuidanceViewController: UIViewController {
                 make.height.equalTo(30)
                 make.width.equalTo(50)
             }
+            ScrollView.delegate = self
             ScrollView.addSubview(imageView)
            
             
@@ -58,7 +61,13 @@ class GuidanceViewController: UIViewController {
         ScrollView.pagingEnabled = true
         self.view.addSubview(ScrollView)
         
-        
+        pageCtl.frame = CGRectMake(0, 700, 414, 30)
+        //总页数
+        pageCtl.numberOfPages = 3
+        pageCtl.pageIndicatorTintColor = UIColor.redColor()
+        pageCtl.currentPageIndicatorTintColor = UIColor.blackColor()
+        pageCtl.enabled = false
+        self.view.addSubview(pageCtl)
         
     }
     
@@ -71,4 +80,15 @@ class GuidanceViewController: UIViewController {
     }
 
 
+}
+extension GuidanceViewController:UIScrollViewDelegate{
+    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+        //计算当前也码数
+        let index = ScrollView.contentOffset.x/self.view.bounds.size.width
+        pageCtl.currentPage = NSInteger(index)
+    }
+//    func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView? {
+//        //直接使用页码指示器的当前页数，来获取滚动里的当前页面视图
+//        return scrollView.subviews[pageCtl.currentPage]
+//    }
 }

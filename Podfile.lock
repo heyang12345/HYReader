@@ -1,5 +1,10 @@
 PODS:
+  - Alamofire (3.5.1)
+  - DGElasticPullToRefresh (1.0.3)
+  - FDFullscreenPopGesture (1.1)
   - JKCategories (1.4)
+  - JPush (2.1.9)
+  - MBProgressHUD (1.0.0)
   - MMDrawerController (0.5.7):
     - MMDrawerController/Core (= 0.5.7)
     - MMDrawerController/MMDrawerBarButtonItem (= 0.5.7)
@@ -12,21 +17,52 @@ PODS:
     - MMDrawerController/Core
   - MMDrawerController/Subclass (0.5.7):
     - MMDrawerController/Core
+  - MOBFoundation_IDFA (2.2.1)
+  - OpenShare (0.0.1)
+  - ReactiveCocoa (4.2.2):
+    - Result (~> 2.0)
+  - Result (2.1.3)
+  - SMSSDK (2.0.7)
   - SnapKit (0.22.0)
+  - swiftScan (1.0.8)
   - WPAttributedMarkup (1.0.0)
+  - YYModel (1.0.4)
 
 DEPENDENCIES:
+  - Alamofire (~> 3.0)
+  - DGElasticPullToRefresh (= 1.0.3)
+  - FDFullscreenPopGesture
   - JKCategories
+  - JPush
+  - MBProgressHUD
   - MMDrawerController (~> 0.5.7)
+  - MOBFoundation_IDFA
+  - OpenShare
+  - ReactiveCocoa (~> 4.0)
+  - SMSSDK
   - SnapKit (~> 0.0)
+  - swiftScan
   - WPAttributedMarkup
+  - YYModel
 
 SPEC CHECKSUMS:
+  Alamofire: 0dfba1184a543e2aa160f4e39cac4e8aba48d223
+  DGElasticPullToRefresh: 040f39ae69840b3261d163fe6735c5901bf851e9
+  FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   JKCategories: 7575c5e39a54e664c44969ee2fab36d75a9c1d17
+  JPush: 8bccf709ace4318a8e7008cc4fab42b706bfad46
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MMDrawerController: 7a4cf8e25596bf2434e03ce50d22a8608ddee6a1
+  MOBFoundation_IDFA: 6566349199a5eba13e03f6dbcd47ef1abff1d15a
+  OpenShare: a560580dbb729d5c0c3cc1ee84cd6aa4a07e94c6
+  ReactiveCocoa: 72263e7ac0770c274617ccd345e01049d0ca38ae
+  Result: 18e1a7597fbcca5923c565b40a25a98afafdee02
+  SMSSDK: 59f61c413de1ef7482bd16d47406697bedad1715
   SnapKit: 0dd2fd157330f1ea11fd84da13e6be8a7a22bae0
+  swiftScan: 2dc76303bc7c2dcb7bde9c539f9bd6a7520abc8e
   WPAttributedMarkup: eb50878af4ec647d8d2090f721a5cfe7d29c27fe
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: b9f6458c7024f938560817b1d1c86ee12a5172c3
+PODFILE CHECKSUM: 4bd45ed4bc8ee7cedec1338f4f051207fe12e016
 
 COCOAPODS: 1.1.1

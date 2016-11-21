@@ -15,6 +15,8 @@ class LoginViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         self.view.backgroundColor = UIColor.whiteColor()
+        //导航控制器的颜色
+         self.navigationController?.navigationBar.barTintColor = UIColor ( red: 0.1412, green: 0.9647, blue: 0.9294, alpha: 1.0 )
         self.title = "登录"
         //用户名
         let userName = UITextField.init()
@@ -22,13 +24,14 @@ class LoginViewController: UIViewController {
         userName.backgroundColor =  UIColor.whiteColor()
         userName.font = UIFont.systemFontOfSize(15)
         userName.textColor = UIColor ( red: 0.6283, green: 0.6283, blue: 0.6283, alpha: 1.0 )
-        userName.layer.cornerRadius = 8
+        userName.layer.cornerRadius = 4
         userName.layer.masksToBounds = true
         userName.layer.borderWidth = 1.0
         self.view.addSubview(userName)
         userName.snp_makeConstraints { (make) in
             make.top.equalTo(100)
-            make.left.right.equalTo(10)
+            make.left.equalTo(10)
+            make.right.equalTo(-10)
             make.left.height.equalTo(48)
         }
         //密码
@@ -37,13 +40,14 @@ class LoginViewController: UIViewController {
         password.font = UIFont.systemFontOfSize(15)
         password.backgroundColor = UIColor.whiteColor()
         password.textColor = UIColor ( red: 0.6283, green: 0.6283, blue: 0.6283, alpha: 1.0 )
-        password.layer.cornerRadius = 12
+        password.layer.cornerRadius = 4
         password.layer.masksToBounds = true
         password.layer.borderWidth = 1.0
         self.view.addSubview(password)
         password.snp_makeConstraints { (make) in
             make.top.equalTo(userName.snp_bottom).offset(10)
-            make.left.right.equalTo(8)
+            make.left.equalTo(10)
+            make.right.equalTo(-10)
             make.height.equalTo(48)
         }
         //用户左边图标
@@ -68,7 +72,7 @@ class LoginViewController: UIViewController {
         password.leftView = passLeft
         password.leftViewMode = .Always
         passLeft.snp_makeConstraints { (make) in
-            make.size.equalTo(CGPointMake(48, 48))
+            make.size.equalTo(CGSizeMake(48, 48))
         }
         passImage.snp_makeConstraints { (make) in
             make.center.equalTo(0)
@@ -84,7 +88,7 @@ class LoginViewController: UIViewController {
         self.view.addSubview(forgetPass)
         forgetPass.snp_makeConstraints { (make) in
             make.top.equalTo(password.snp_bottom).offset(5)
-            make.right.equalTo(2)
+            make.right.equalTo(-5)
             make.height.equalTo(56)
             make.width.equalTo(72)
         }
@@ -98,8 +102,9 @@ class LoginViewController: UIViewController {
         loginButton.titleLabel?.font = UIFont.systemFontOfSize(20)
         self.view.addSubview(loginButton)
         loginButton.snp_makeConstraints { (make) in
-            make.top.equalTo(forgetPass).offset(30)
-            make.right.left.equalTo(8)
+            make.top.equalTo(forgetPass.snp_bottom).offset(30)
+            make.left.equalTo(8)
+            make.right.equalTo(-8)
             make.height.equalTo(48)
         }
         loginButton.jk_setBackgroundColor(UIColor ( red: 0.1941, green: 1.0, blue: 0.971, alpha: 1.0 ), forState: .Normal)
@@ -107,6 +112,20 @@ class LoginViewController: UIViewController {
         loginButton.jk_setBackgroundColor(UIColor.darkGrayColor(), forState: .Highlighted)
         //按钮的点击事件
         loginButton.jk_handleControlEvents(UIControlEvents.TouchUpInside) { (sender) in
+            NetHelp.request(parameters:
+                ["service":"User.Login",
+                "phone":userName.text!,
+                  "password":(password.text! as NSString).jk_md5String,
+                 ]).responseJSON({ (data, success) in
+                   //配置用户数据
+                    if success{
+                        UserModel.loggin(with: data as! [String:AnyObject])
+                        self.navigationController?.dismissViewControllerAnimated(true, completion: nil)
+                    }else{
+                        NetHelp.showAlertMsg("错误", onViewController: self)
+                    }
+                 })
+            
             
         }
         //注册按钮
@@ -117,7 +136,8 @@ class LoginViewController: UIViewController {
         self.view.addSubview(registerButton)
         registerButton.snp_makeConstraints { (make) in
             make.top.equalTo(loginButton.snp_bottom).offset(10)
-            make.left.right.equalTo(8)
+            make.left.equalTo(8)
+            make.right.equalTo(-8)
             make.height.equalTo(48)
         }
         registerButton.jk_setBackgroundColor(UIColor ( red: 0.1941, green: 1.0, blue: 0.971, alpha: 1.0 ), forState: .Normal)
@@ -128,7 +148,7 @@ class LoginViewController: UIViewController {
             
             let registerVC = RegisterViewController.init()
             
-           self.presentViewController(registerVC, animated: true, completion: nil)
+           self.navigationController?.pushViewController(registerVC, animated: true)
             
         }
 
